@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'atlas_architecture.apps.AtlasArchitectureConfig'
+    'atlas_architecture'
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,24 @@
+
+/* ----- Body ----- */
+.title{
+    margin: 30px;
+}
+
+.card{
+    margin-top: 20px;
+}
+
+.card:hover{
+    background-color: #777;
+    color: white;
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-img{
+    width: 100%;
+    height: 75%;
+}

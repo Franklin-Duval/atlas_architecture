@@ -1,0 +1,63 @@
+
+/* ----- Banner ----- */
+
+.image{
+    height: 500px;
+}
+
+.intro{
+    margin-bottom: 100px;
+    color: black;
+}
+
+.intro h1{
+    font-size: 60px;
+}
+
+.intro h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.options{
+    margin-top: 70px;
+    padding-left: 30%;
+}
+
+.options .btn-primary{
+    margin-left: 50px;
+}
+
+
+/* ----- Main Page ----- */
+.title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img{
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.partner{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.buttonP{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ----- Services ----- */
+#service{
+    margin-bottom: 30px;
+    background-color:#f7f7f7 ;
+}
+
+/* ----- Realisations ----- */
+.card{
+    margin-top: 20px;
+}

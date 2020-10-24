@@ -1,73 +1,11 @@
+{% extends 'layouts/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ATLAS Architecture</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{% static "css/acceuil.css" %} ">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<style>
-	.carousel-control-prev-icon {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-		border-radius: 50px;
-		height: 50px;
-		width: 50px;
-		padding: 30px;
-	}
-	
-	.carousel-control-next-icon {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-		border-radius: 50px;
-		height: 50px;
-		width: 50px;
-		padding: 30px;
-	}
-</style>
-<body>
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="acceuil">
-			<img src="{% static "images/web log.png" %} " width="210" height="50" class="d-inline-block align-top" alt="" loading="lazy">
-			
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-	
-		<div class="collapse navbar-collapse" id="navmenu">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="service">Nos Services</a></li>
-	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="realisation">Nos Réalisations</a></li>
-	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="partenaire">Nos Partenaires</a></li>
-	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Nous Contacter</a></li>
-	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Plus</a></li>
-			</ul>
+{% block linkcss %}
+	<link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/acceuil.css" %} ">
+{% endblock linkcss %}
 
-			<div class="row">
-				<div class="icon">
-					<a href="#"><i class="fa fa-fw fa-search"></i></a>
-				</div>
-					
-				<form class="form-inline">
-					<button class="btn btn-primary" type="button">Register</button>
-					<button class="btn btn-primary" type="button">Login</button>
-				</form>
-			</div>
-		</div>
-
-		
-	</nav>
-
+{% block content %}
 	<div id="banner">
 		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -77,7 +15,7 @@
 			</ol>
 			<div class="carousel-inner">
 			  	<div class="carousel-item active">
-					<img src="{% static "images/slide1.jpg" %}" class="d-block w-100 image" alt="...">
+					<img src="{% static "atlas_architecture/images/slide1.jpg" %}" class="d-block w-100 image" alt="...">
 					<div class="carousel-caption d-none d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
@@ -91,7 +29,7 @@
 					</div>
 			  </div>
 			  <div class="carousel-item">
-					<img src="{% static "images/slide2.jpg" %}" class="d-block w-100 image" alt="...">
+					<img src="{% static "atlas_architecture/images/slide2.jpg" %}" class="d-block w-100 image" alt="...">
 					<div class="carousel-caption d-none d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
@@ -105,7 +43,7 @@
 					</div>
 			  	</div>
 				<div class="carousel-item">
-					<img src="{% static "images/slide3.jpg" %}" class="d-block w-100 image" alt="...">
+					<img src="{% static "atlas_architecture/images/slide3.jpg" %}" class="d-block w-100 image" alt="...">
 					<div class="carousel-caption d-none d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
@@ -140,22 +78,22 @@
 		
 		<div class="row partner">
 			<div class="col-sm-2">
-				<img src="{% static "Images/img1.jpg" %} " alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img1.jpg" %} " alt="" class="img">
 			</div>
 			<div class="col-sm-2">
-				<img src="{% static "images/img2.jpg" %}" alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img2.jpg" %}" alt="" class="img">
 			</div>
 			<div class="col-sm-2">
-				<img src="{% static "images/img3.jpg" %}" alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img3.jpg" %}" alt="" class="img">
 			</div>
 			<div class="col-sm-2">
-				<img src="{% static "images/img4.jpg" %}" alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img4.jpg" %}" alt="" class="img">
 			</div>
 			<div class="col-sm-2">
-				<img src="{% static "images/img5.jpg" %}" alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
 			</div>
 			<div class="col-sm-2">
-				<img src="{% static "images/img6.jpg" %}" alt="" class="img">
+				<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
 			</div>
 		
 		</div>
@@ -169,7 +107,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img1.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ENSP</h5>
 						</div>
@@ -178,7 +116,7 @@
 	
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img7.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ATLAS Architecture</h5>
 						</div>
@@ -187,7 +125,7 @@
 				
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img5.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">G ART</h5>
 						</div>
@@ -205,7 +143,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img5.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ENSP</h5>
 						</div>
@@ -214,7 +152,7 @@
 	
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ATLAS Architecture</h5>
 						</div>
@@ -223,7 +161,7 @@
 				
 				<div class="col-md-4">
 					<div class="card" style="width: 18rem;">
-						<img src="{% static "images/img4.jpg" %}" class="card-img-top" alt="...">
+						<img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">G ART</h5>
 						</div>
@@ -235,24 +173,4 @@
 		</div>
 	</div>
 
-	<div class="container-fluid foot">
-		<div class="row">
-			<div class="col-md-4">
-				<a href="#"><i class="fa fa-whatsapp fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-facebook fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-twitter fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-instagram fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-linkedin fa-1x social-media"></i></a>
-			</div>
-	
-			<div class="col-md-4">
-				<p>Contacter nous pour plus d'information</p>
-			</div>
-	
-			<div class="col-md-4">
-				<img src="{% static "images/atlas1.png" %}" alt="" class="logo-end">
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+{% endblock content %}

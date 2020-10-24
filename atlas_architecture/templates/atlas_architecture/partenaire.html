@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block linkcss %}
+	<link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/partenaire.css" %} ">
+{% endblock linkcss %}
+
+{% block content %}
+	<div class="container body">
+        <h2 class="text-center title">Nos Partenaires</h2>
+        <p class="text-center">Speech sur l'importances de la relation avec les partenaires</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecole Nationale Supérieure Polytechnique Yaoundé</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ATLAS Architecture</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static "atlas_architecture/images/img6.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">G ART</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+

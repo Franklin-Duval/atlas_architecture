@@ -33,26 +33,6 @@ form button{
     margin-right: 20px;
 }
 
-/* ----- Body ----- */
-.title{
-    margin: 30px;
-}
-
-.card{
-    margin-top: 20px;
-}
-
-.card:hover{
-    background-color: #777;
-    color: white;
-}
-
-.buttons{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
 
 /* ----- Footer ----- */
 .foot{
@@ -75,18 +55,14 @@ form button{
 
 .social-media{
     color: white;
-    margin: 2px;
+    margin-top: 2px;
     margin-top: 20px;
 }
 
 .logo-end{
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-radius: 25px;
     margin-left: 50%;
-}
-
-.modal-img{
-    width: 100%;
-    height: 75%;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,59 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block linkcss %}
+    <link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/service.css" %}">
+{% endblock linkcss %}
+	
+{% block content %}
+    <div class="container-fluid body">
+        <h2 class="text-center title">Nos Services</h2>
+        <p class="text-center">Retrouvez ici les services proposés par le groupe ATLAS et ses différents partenaires</p>
+
+        <div class="scroll">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img4.jpg" %} " class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ENSP</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ENSP</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img3.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">TESSIN</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MirRor</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img6.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">MirRor</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ICORP</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">ICORP</h5>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{% endblock content %}

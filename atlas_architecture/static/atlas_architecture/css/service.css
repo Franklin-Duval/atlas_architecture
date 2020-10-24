@@ -1,0 +1,29 @@
+
+/* ----- Body ----- */
+.title{
+    margin: 30px;
+}
+
+.body{
+    margin: 20px;
+}
+
+.scroll{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scroll div.card{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.scroll div.card:hover{
+    background-color: #777;
+}
