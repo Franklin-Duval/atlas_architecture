@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATLAS Architecture</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static "css/realisation.css" %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="acceuil">
+			<img src="{% static "images/web log.png" %} " width="210" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navmenu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="service">Nos Services</a></li>
+	
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="realisation">Nos Réalisations</a></li>
+	
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="partenaire">Nos Partenaires</a></li>
+	
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Nous Contacter</a></li>
+	
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Plus</a></li>
+			</ul>
+
+			<div class="row">
+				<div class="icon">
+					<a href="#"><i class="fa fa-fw fa-search"></i></a>
+				</div>
+					
+				<form class="form-inline">
+					<button class="btn btn-primary" type="button">Register</button>
+					<button class="btn btn-primary" type="button">Login</button>
+				</form>
+			</div>
+        </div>
+        		
+    </nav>
+    
+    <div class="container">
+        <h2 class="text-center title">Nous réalisons vos Inspirations</h2>
+        <div class="row">
+            <div class="col-md-3" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Commentaires</h3>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img4.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img7.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="{% static "images/img2.jpg" %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row buttons">
+            <div class="col-sm-6">
+                <button class="btn btn-primary" type="button">Voir plus de Projets</button>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary" type="button">Débuter un Projet</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="container-fluid foot">
+		<div class="row">
+			<div class="col-md-4">
+				<a href="#"><i class="fa fa-whatsapp fa-1x social-media"></i></a>
+				<a href="#"><i class="fa fa-facebook fa-1x social-media"></i></a>
+				<a href="#"><i class="fa fa-twitter fa-1x social-media"></i></a>
+				<a href="#"><i class="fa fa-instagram fa-1x social-media"></i></a>
+				<a href="#"><i class="fa fa-linkedin fa-1x social-media"></i></a>
+			</div>
+	
+			<div class="col-md-4">
+				<p>Contacter nous pour plus d'information</p>
+			</div>
+	
+			<div class="col-md-4">
+				<img src="{% static "images/atlas1.png" %}" alt="" class="logo-end">
+			</div>
+		</div>
+	</div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Nom du Projet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img class="modal-img" src="{% static "images/img2.jpg" %}" alt="">
+                        <div>
+                            <h3>Participant: Franklin Duval</h3>
+                            <p>Description du projet: Le projet a été mis en place grace aux logiciel auto cad, photoshop, archicad et autres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Voir Plus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

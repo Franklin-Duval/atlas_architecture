@@ -1,0 +1,130 @@
+/* ----- Navigation Bar ----- */
+.logo{
+    color: black;
+}
+
+.navbar-nav li{
+	padding: 0 10px;
+}
+
+.navbar-nav li a{
+	color: black !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+
+#id{
+    color: black;
+}
+
+.icon{
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.icon a{
+    color: black;
+    size: 20px;
+}
+
+form button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ----- Banner ----- */
+
+.image{
+    height: 500px;
+}
+
+.intro{
+    margin-bottom: 100px;
+    color: black;
+}
+
+.intro h1{
+    font-size: 60px;
+}
+
+.intro h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.options{
+    margin-top: 70px;
+    padding-left: 30%;
+}
+
+.options .btn-primary{
+    margin-left: 50px;
+}
+
+
+/* ----- Main Page ----- */
+.title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img{
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+}
+
+.partner{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.buttonP{
+    margin-left: 40%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ----- Services ----- */
+#service{
+    margin-bottom: 30px;
+    background-color:#f7f7f7 ;
+}
+
+/* ----- Footer ----- */
+.foot{
+    background-color: rgb(20, 19, 19);
+    padding-top: 20px;
+    padding-bottom: 20px;
+/*     background-image: url("../images/footer.jpg"); */
+}
+
+/* ----- Realisations ----- */
+.card{
+    margin-top: 20px;
+}
+
+.foot p{
+    color: white;
+    margin-top: 15px;
+}
+
+.foot i{
+    background-color: gray;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+.social-media{
+    color: white;
+    margin-top: 2px;
+    margin-top: 20px;
+}
+
+.logo-end{
+    height: 70px;
+    width: 70px;
+    border-radius: 25px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+}
