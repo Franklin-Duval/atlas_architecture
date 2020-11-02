@@ -9,8 +9,8 @@
     <div class="container">
         <h2 class="text-center title">Nous réalisons vos Inspirations</h2>
         <div class="row">
-            <div class="col-md-3" data-toggle="modal" data-target="#staticBackdrop">
-                <div class="card" style="width: 15rem;">
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -46,7 +46,7 @@
 
         <div class="row">
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 15rem;">
+                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
                     <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -79,11 +79,11 @@
             </div>
         </div>
 
-        <div class="container row buttons">
-            <div class="col-sm-6">
+        <div class="container col-md-12 row">
+            <div class="col-sm-6 buttons">
                 <button class="btn btn-primary" type="button">Voir plus de Projets</button>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 buttons">
                 <button class="btn btn-primary" type="button">Débuter un Projet</button>
             </div>
             
@@ -92,11 +92,11 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="detail" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Nom du Projet</h5>
+                    <h5 class="modal-title" id="detailLabel">Nom du Projet</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -111,6 +111,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Réaliser un projet similaire</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
                     <button type="button" class="btn btn-primary">Voir Plus</button>
                 </div>

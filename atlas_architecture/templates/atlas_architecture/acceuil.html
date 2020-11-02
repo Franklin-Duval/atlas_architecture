@@ -16,13 +16,17 @@
 			<div class="carousel-inner">
 			  	<div class="carousel-item active">
 					<img src="{% static "atlas_architecture/images/slide1.jpg" %}" class="d-block w-100 image" alt="...">
-					<div class="carousel-caption d-none d-sm-block">
+					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
 							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options">
-								<button class="btn btn-dark" type="button">Voir nos Réalisations</button>
-								<button class="btn btn-primary" type="button">Débuter un projet</button>
+							<div class="row options col-md-12">
+								<div class="col-md-6">
+									<a class="btn btn-dark" type="button" href="#realisation">Voir nos Réalisations</a>
+								</div>
+								<div class="col-md-6">
+									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
+								</div>
 							</div>
 						</div>
 						
@@ -30,13 +34,17 @@
 			  </div>
 			  <div class="carousel-item">
 					<img src="{% static "atlas_architecture/images/slide2.jpg" %}" class="d-block w-100 image" alt="...">
-					<div class="carousel-caption d-none d-sm-block">
+					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
 							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options">
-								<button class="btn btn-dark" type="button">Voir nos Partenaires</button>
-								<button class="btn btn-primary" type="button">Débuter un projet</button>
+							<div class="row options col-md-12">
+								<div class="col-md-6">
+									<a class="btn btn-dark" type="button" href="partenaire">Voir nos Partenaires</a>
+								</div>
+								<div class="col-md-6">
+									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
+								</div>
 							</div>
 						</div>
 						
@@ -44,13 +52,17 @@
 			  	</div>
 				<div class="carousel-item">
 					<img src="{% static "atlas_architecture/images/slide3.jpg" %}" class="d-block w-100 image" alt="...">
-					<div class="carousel-caption d-none d-sm-block">
+					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
 							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options">
-								<button class="btn btn-dark" type="button">Voir nos Services</button>
-								<button class="btn btn-primary" type="button">Débuter un projet</button>
+							<div class="row options col-md-12">
+								<div class="col-md-6">
+									<a class="btn btn-dark" type="button" href="service">Voir nos Services</a>
+								</div>
+								<div class="col-md-6">
+									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
+								</div>
 							</div>
 						</div>
 						
@@ -76,29 +88,31 @@
 			du BTP. La réalisation de vos projets s'accompagnent d'un suivi post conception et de conceil judicieux fournis par des experts.
 		</p>
 		
-		<div class="row partner">
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img1.jpg" %} " alt="" class="img">
-			</div>
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img2.jpg" %}" alt="" class="img">
-			</div>
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img3.jpg" %}" alt="" class="img">
-			</div>
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img4.jpg" %}" alt="" class="img">
-			</div>
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
-			</div>
-			<div class="col-sm-2">
-				<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
-			</div>
-		
-		</div>
+		<div class="row">
+						
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img1.jpg" %} " alt="" class="img">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img2.jpg" %}" alt="" class="img">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6">
+					<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
+				</div>
 
-		<button type="button" class="btn btn-outline-success btn-lg buttonP">VOIR PRESENTATION</button>
+		</div>
+		<div class="col-md-12 text-center">
+			<button type="button" class="btn btn-outline-success btn-lg buttonP">VOIR PRESENTATION</button>
+		</div>
 	</div>
 
 	<div id="service">
@@ -106,7 +120,7 @@
 			<h2 class="title text-center">Services</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ENSP</h5>
@@ -115,7 +129,7 @@
 				</div>
 	
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ATLAS Architecture</h5>
@@ -124,7 +138,7 @@
 				</div>
 				
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">G ART</h5>
@@ -132,8 +146,9 @@
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
-			
+			<div class="col-md-12 text-center">
+				<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
+			</div>
 		</div>
 	</div>
 
@@ -142,7 +157,7 @@
 			<h2 class="title text-center">Réalisations</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ENSP</h5>
@@ -151,7 +166,7 @@
 				</div>
 	
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">ATLAS Architecture</h5>
@@ -160,7 +175,7 @@
 				</div>
 				
 				<div class="col-md-4">
-					<div class="card" style="width: 18rem;">
+					<div class="card" style="width: 15rem;">
 						<img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">G ART</h5>
@@ -168,8 +183,9 @@
 					</div>
 				</div>
 			</div>
-			<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
-			
+			<div class="col-md-12 text-center">
+				<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
+			</div>
 		</div>
 	</div>
 

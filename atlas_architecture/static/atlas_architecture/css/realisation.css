@@ -6,6 +6,8 @@
 
 .card{
     margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 10%;
 }
 
 .card:hover{
@@ -21,4 +23,10 @@
 .modal-img{
     width: 100%;
     height: 75%;
+}
+
+@media screen and (max-width: 550px){
+    .buttons button{
+        margin-left: 100px;
+    }
 }

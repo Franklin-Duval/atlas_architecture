@@ -4,56 +4,25 @@
 {% block linkcss %}
     <link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/service.css" %}">
 {% endblock linkcss %}
-	
+
 {% block content %}
     <div class="container-fluid body">
         <h2 class="text-center title">Nos Services</h2>
-        <p class="text-center">Retrouvez ici les services proposés par le groupe ATLAS et ses différents partenaires</p>
+        <p class="text-center speech">Le design extérieur d'un ouvrage représente son identité et constitue son premier critère d évaluation. 
+            Ainsi , il mérite d être conçu aussi minutieusement que le reste de l édifice. 
+            Du choix des couleurs au choix des matériaux en passant par l‘Aménagement des espaces verts , ATLAS Architecture vous 
+            accompagne afin de faire transparaître sur votre édifice le meilleur de votre imagination.
+        </p>
 
         <div class="scroll">
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img4.jpg" %} " class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">ENSP</h5>
+            {% for serv in services %}
+                <div class="service">
+                    <h2>0{{serv.id}} </h2>
+                    <h3>{{serv.nom}} </h3>
+                    <p>{{serv.description}} </p>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">ENSP</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img3.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">TESSIN</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">MirRor</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img6.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">MirRor</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">ICORP</h5>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">ICORP</h5>
-                </div>
-            </div>
-            
+            {% endfor %}
         </div>
+
     </div>
 {% endblock content %}

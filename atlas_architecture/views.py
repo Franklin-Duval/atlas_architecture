@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 def home(request):
@@ -11,4 +12,6 @@ def partenaire(request):
     return render(request, 'atlas_architecture/partenaire.html')
 
 def service(request):
-    return render(request, 'atlas_architecture/service.html')
+    services = Service.objects.all()
+    context = {"services": services}
+    return render(request, 'atlas_architecture/service.html', context)
