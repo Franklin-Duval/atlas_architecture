@@ -38,12 +38,15 @@ class Realisation(models.Model):
     date = models.DateField(null=False)
     lieu = models.CharField(max_length=25, null=False)
     description = models.TextField(null=True)
-    images = models.ImageField(null=True)
     types = models.ForeignKey(Type, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.code + " " + self.nom
-    
+
+
+class Image(models.Model):
+    images = models.ImageField(null=True)
+    realisation = models.ForeignKey(Realisation, on_delete=models.CASCADE)
 
 
 class ligneCaracteristique(models.Model):
