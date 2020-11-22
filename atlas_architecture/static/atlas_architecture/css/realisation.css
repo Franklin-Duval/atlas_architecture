@@ -1,9 +1,5 @@
 
 /* ----- Body ----- */
-.title{
-    margin: 30px;
-}
-
 .card{
     margin-top: 20px;
     margin-left: 15%;
@@ -22,11 +18,16 @@
 
 .modal-img{
     width: 100%;
-    height: 75%;
+    height: 80%;
 }
 
 @media screen and (max-width: 550px){
     .buttons button{
         margin-left: 100px;
     }
+}
+
+.image{
+    height: 150px;
+    width: 150px;
 }

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Partenaire(models.Model):
-    logo = models.ImageField(null=True)
+    logo = models.ImageField(null=True, blank=True, upload_to="images/partenaire")
     nom = models.CharField(max_length=150)
     description = models.TextField(null=True)
     email = models.EmailField(unique=True, null=False)
@@ -13,7 +13,7 @@ class Partenaire(models.Model):
 class Service(models.Model):
     nom = models.CharField(max_length=50)
     description = models.TextField(null=True)
-    image = models.ImageField(null=True)
+    image = models.ImageField(null=True, blank=True, upload_to="images/service")
 
     def __str__(self):
         return self.nom
@@ -45,7 +45,7 @@ class Realisation(models.Model):
 
 
 class Image(models.Model):
-    images = models.ImageField(null=True)
+    images = models.ImageField(null=True, blank=True, upload_to="images/realisation")
     realisation = models.ForeignKey(Realisation, on_delete=models.CASCADE)
 
 

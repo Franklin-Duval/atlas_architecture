@@ -6,78 +6,71 @@
 {% endblock linkcss %}
 
 {% block content %}
-    <div class="container">
+    <div>
         <h2 class="text-center title">Nous réalisons vos Inspirations</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3>Commentaires</h3>
 
         <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+            {% for real in content %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 20rem;" data-toggle="modal" data-target="#{{real.realisations.code}}">
+                        {% for im in real.images|slice:":1" %}
+                            <img src="{{im.url}}" class="card-img-top" alt="..."/>
+                        {% endfor %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{real.realisations.nom}}</h5>
+                            <p class="card-text">{{real.realisations.description|slice:":500"}} </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="{{real.realisations.code}}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="detailLabel">{{real.realisations.nom}}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            {% for im in real.images|slice:":1" %}
+                                                <div class="carousel-item active">
+                                                    <img src="{{im.url}}" class="modal-img" alt="..."/>
+                                                </div>
+                                            {% endfor %}
+                                            {% for im in real.images|slice:"1:3" %}
+                                                <div class="carousel-item">
+                                                    <img src="{{im.url}}" class="modal-img" alt="..."/>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>Participant: Franklin Duval</h3>
+                                        <p>Description du projet: Le projet a été mis en place grace aux logiciel auto cad, photoshop, archicad et autres</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Réaliser un projet similaire</button>
+                                <button type="button" class="btn btn-primary">Voir Plus</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 15rem;" data-toggle="modal" data-target="#detail">
-                    <img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+
 
         <div class="container col-md-12 row">
             <div class="col-sm-6 buttons">
@@ -86,38 +79,9 @@
             <div class="col-sm-6 buttons">
                 <button class="btn btn-primary" type="button">Débuter un Projet</button>
             </div>
-            
         </div>
         
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="detail" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="detailLabel">Nom du Projet</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <img class="modal-img" src="{% static "atlas_architecture/images/img2.jpg" %}" alt="">
-                        <div>
-                            <h3>Participant: Franklin Duval</h3>
-                            <p>Description du projet: Le projet a été mis en place grace aux logiciel auto cad, photoshop, archicad et autres</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Réaliser un projet similaire</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary">Voir Plus</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
 {% endblock content %}
     
