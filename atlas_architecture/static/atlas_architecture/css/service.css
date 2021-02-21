@@ -5,13 +5,17 @@
 }
 
 .bodys{
-    background-image: url("../images/img1.jpg");
+    background-image: url("../images/fond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .speech{
     font-size: 18px;
     font-family: 'Comic Sans MS';
     font-weight: bold;
+    color: black;
 }
 
 .scroll{

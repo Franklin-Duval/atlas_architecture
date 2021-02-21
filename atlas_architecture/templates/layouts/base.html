@@ -32,40 +32,48 @@
 		width: 50px;
 		padding: 30px;
 	}
+
+    .navbar-nav li{
+        padding: 0 40px;
+    }
+
+    .navbar-nav li a{
+        color: #777 !important;
+        font-size: 20px;
+        float: right;
+        text-align: left;
+        font-family: Calibri;
+    }
 </style>
 
 <body>
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-light">
 		<a class="navbar-brand" href="acceuil">
-			<img src="{% static "atlas_architecture/images/web log.png" %} " width="210" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+			<img src="{% static "atlas_architecture/images/logo_gris.png" %} " width="210" height="50" class="d-inline-block align-top" alt="" loading="lazy">
 			
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon" style="background-color: #777"></span>
 		</button>
 	
 		<div class="collapse navbar-collapse" id="navmenu">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="service">Nos Services</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="service">SERVICES</a></li>
 	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="realisation">Nos Réalisations</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="realisation">REALISATIONS</a></li>
 	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="partenaire">Nos Partenaires</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#partenaire">PARTENAIRES</a></li>
 	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Nous Contacter</a></li>
-	
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#">Plus</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" href="#contact">CONTACTS</a></li>
 			</ul>
 
-			<div class="row">
-				<div class="icon">
-					<a href="#"><i class="fa fa-fw fa-search"></i></a>
-				</div>
-					
-				<form class="form-inline">
-					<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#register">Register</button>
-					<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#login">Login</button>
-				</form>
+			<div style="margin-left: 35px; margin-right: 15px;" >
+				<div class="input-group">
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Rechercher">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" style="background-color: #777"><a href="#" style="color: white;"><i class="fa fa-fw fa-search"></i></a></div>
+                    </div>
+                </div>
 			</div>
 		</div>
 
@@ -75,108 +83,35 @@
 	{% block content %}
     {% endblock content %}
 
-    <div class="container-fluid foot">
+    <div id="contact" class="container-fluid foot">
+        <h1 class="text-center">CONTACTS</h1>
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="#"><i class="fa fa-whatsapp fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-facebook fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-twitter fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-instagram fa-1x social-media"></i></a>
-				<a href="#"><i class="fa fa-linkedin fa-1x social-media"></i></a>
+			<div class="col-sm-2 contact">
+				<img src="{% static "atlas_architecture/images/facebook.png" %}" alt="">
+                <p>ATLAS Architecture</p>
 			</div>
-	
-			<div class="col-sm-4">
-				<p>Contacter nous pour plus d'information</p>
+
+            <div class="col-sm-3 contact">
+				<img src="{% static "atlas_architecture/images/whatsapp.png" %}" alt="">
+                <p>+237 691 926 566 / 680 426 684</p>
 			</div>
-	
-			<div class="col-sm-4">
-				<img src="{% static "atlas_architecture/images/atlas1.png" %}" alt="" class="logo-end">
+
+            <div class="col-sm-2 contact">
+				<img src="{% static "atlas_architecture/images/insta.png" %}" alt="">
+                <p>atlas_cameroun</p>
+			</div>
+
+            <div class="col-sm-2 contact">
+				<img src="{% static "atlas_architecture/images/in.png" %}" alt="">
+                <p>ATLAS Architecture Cameroun</p>
+			</div>
+
+            <div class="col-sm-3 contact">
+				<img src="{% static "atlas_architecture/images/gmail.png" %}" alt="">
+                <p>atlasarchitecture237@gmail.com</p>
 			</div>
 		</div>
 	</div>
-
-    <!-- Modal Login -->
-    <div class="modal fade" id="login" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Adresse Email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Mot de passe</label>
-                                <input type="password" class="form-control" id="password" placeholder="mot de passe">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Registration -->
-    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="registerLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="registerLabel">Registration</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="nom">Nom</label>
-                                    <input type="text" class="form-control" id="nom" placeholder="nom">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="prenom">Prénom</label>
-                                    <input type="text" class="form-control" id="prenom" placeholder="prenom">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Adresse Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="email">
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="password">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password">
-                                </div>
-                               
-                                <div class="form-group col-md-6">
-                                    <label for="c_password">Confirmer Mot de passe</label>
-                                    <input type="password" class="form-control" id="c_password">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="submit" class="btn btn-primary">Registration</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 </html>

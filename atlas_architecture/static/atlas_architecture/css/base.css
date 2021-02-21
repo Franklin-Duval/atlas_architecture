@@ -5,7 +5,7 @@
 }
 
 .navbar-nav li{
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 .navbar-nav li a{
@@ -38,14 +38,13 @@ form button{
 /* ----- Footer ----- */
 .foot{
     /* background-color: rgb(20, 19, 19); */
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
+    min-height: 300px;
     background-image: url("../images/footer.jpg");
-}
-
-.foot p{
-    color: white;
-    margin-top: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .foot i{
@@ -54,18 +53,22 @@ form button{
     border-radius: 30px;
 }
 
-.social-media{
+
+.foot h1, p{
     color: white;
-    margin-top: 2px;
+    font-family: "Calibri";
     margin-top: 20px;
 }
 
-.logo-end{
-    height: 70px;
-    width: 70px;
-    border-radius: 25px;
-    margin-bottom: 20px;
+.foot .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
 
 /* @media screen and (min-width: 500px){
     .logo-end{

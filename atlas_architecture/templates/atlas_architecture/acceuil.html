@@ -6,6 +6,72 @@
 {% endblock linkcss %}
 
 {% block content %}
+	<style>
+		.intro h1{
+			font-size: 60px;
+			color: black;
+			text-align: left;
+			font-family: "Calibri";
+			font-weight: bold;
+		}
+
+		.intro h3{
+			font-family: "Calibri";
+			text-align: left;
+		}
+
+		.intro .test{
+			margin-bottom: -30px;
+		}
+
+		.title{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			font-family: Calibri;
+			color: black;
+		}
+
+		.title::after{
+			content: '';
+			background: black;
+			height: 2px;
+			width: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			transform: translateY(1px);
+		}
+
+		#service{
+			margin-top: 35px;
+			padding-top: 20px;
+			padding-bottom: 100px;
+			background-color: #000033;
+		}
+
+		.serv{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		.serv p{
+			margin-top: 20px;
+			font-size: 18px;
+			font-family: Calibri;
+		}
+
+		#realisation{
+			background-color: #333333;
+			margin-top: 15px;
+			padding-top: 20px;
+			padding-bottom: 100px;
+
+		}
+	</style>
 	<div id="banner">
 		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -19,15 +85,8 @@
 					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1>A T L A S Architecture</h1>
-							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options col-md-12">
-								<div class="col-md-6">
-									<a class="btn btn-dark" type="button" href="#realisation">Voir nos Réalisations</a>
-								</div>
-								<div class="col-md-6">
-									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
-								</div>
-							</div>
+							<h3>Ce qui se conçoit bien se construit aisement et <br/> les fonds pour le faire arrivent rapidement</h3>
+							
 						</div>
 						
 					</div>
@@ -36,16 +95,18 @@
 					<img src="{% static "atlas_architecture/images/slide2.jpg" %}" class="d-block w-100 image" alt="...">
 					<div class="carousel-caption d-sm-block">
 						<div class="intro">
-							<h1>A T L A S Architecture</h1>
-							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options col-md-12">
+							<h1>NOS PARTENAIRES <br/>A VOTRE DISPOSITION</h1>
+							<h3>Nous méttons à votre disposition l'assistance de nos <br/>différents partenaires pour vous conseiller, 
+								vous donner des références<br/> et vous accompagner dans voos différents projets.
+							</h3>
+							{% comment %} <div class="row test">
 								<div class="col-md-6">
-									<a class="btn btn-dark" type="button" href="partenaire">Voir nos Partenaires</a>
+									<a class="btn btn-dark btn-lg" type="button" href="partenaire">Voir nos Partenaires</a>
 								</div>
 								<div class="col-md-6">
-									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
+									<a class="btn btn-primary btn-lg" type="button" href="#" style="margin-top: 20px;">Débuter un projet</a>
 								</div>
-							</div>
+							</div> {% endcomment %}
 						</div>
 						
 					</div>
@@ -54,16 +115,9 @@
 					<img src="{% static "atlas_architecture/images/slide3.jpg" %}" class="d-block w-100 image" alt="...">
 					<div class="carousel-caption d-sm-block">
 						<div class="intro">
-							<h1>A T L A S Architecture</h1>
-							<h5>Conçevoir du niveau de base au niveau avancé pour tous par des experts</h5>
-							<div class="row options col-md-12">
-								<div class="col-md-6">
-									<a class="btn btn-dark" type="button" href="service">Voir nos Services</a>
-								</div>
-								<div class="col-md-6">
-									<a class="btn btn-primary" type="button" href="#">Débuter un projet</a>
-								</div>
-							</div>
+							<h1 style="color: white">UNE DIVERSITE DE SERVICES <br/> POUR DES PROJETS PERSONNALISES</h1>
+							<h3 style="color: white">Personnalisez au maximum vos projets à votre guise <br/> à l'aide de nos différents services en place pour vous <br/> accompagner dans chaque détails.</h3>
+							
 						</div>
 						
 					</div>
@@ -81,110 +135,126 @@
 	</div>
 
 	<div class="container">
-		<h2 class="text-center title">Dans la Conception des Projets avec Vous</h2>
-		<p class="text-center">
-			Notre travail va étapes par étapes. Nous comprennons que la meilleur façon de vous satisfaire est de vous donner une maitrise suffisante de votre projet. 
-			C'est pour cela qu'ATLAS Architecture fait appel à des architectes, des ingénieurs du génie civil, des techniciens supérieurs, et d'autres proffesionels
-			du BTP. La réalisation de vos projets s'accompagnent d'un suivi post conception et de conceil judicieux fournis par des experts.
+		<h2 class="text-center title">Qui Sommes Nous ?</h2>
+		<p class="text-center" style="color: black; font-size: 20px;">
+			ATLAS Architecture eset un cabinet d'architecture créé en 2019 par un 
+			groupe d'ingénieurs de nationalité camerounaise dans l'optique de vulgariser 
+			l'accès à une architecture de qualité au Cameroun.
 		</p>
-		
-		<div class="row">
-						
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img1.jpg" %} " alt="" class="img">
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img2.jpg" %}" alt="" class="img">
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img5.jpg" %}" alt="" class="img">
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<img src="{% static "atlas_architecture/images/img6.jpg" %}" alt="" class="img">
-				</div>
 
-		</div>
-		<div class="col-md-12 text-center">
-			<button type="button" class="btn btn-outline-success btn-lg buttonP">VOIR PRESENTATION</button>
-		</div>
+		<h2 class="text-center title">Nos Valeurs</h2>
+		<p class="text-center" style="color: black; font-size: 20px;">
+			Honnetteté - Perserverance - Travail - Confiance
+		</p>
+
+		<h2 class="text-center title">Nos Mots d'Ordre</h2>
+		<p class="text-center" style="color: black; font-size: 20px;">
+			Qualité - Coût - Temps - Créativité - Inovation
+		</p>
+
+		<h2 class="text-center title">Notre Mission</h2>
+		<p class="text-center" style="color: black; font-size: 20px;">
+			Donner à chacun les outils nécessaire pour la mise en 
+			place d'un cadre de vie propice et s'insérant dans le contexte urbain.
+		</p>
+
 	</div>
 
 	<div id="service">
-		<div class="container">
-			<h2 class="title text-center">Services</h2>
+		<div class="container-fluid">
+			<h2 class="title text-center" style="color: white; ">SERVICES</h2>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img1.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ENSP</h5>
-						</div>
-					</div>
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/Service_conception.png" %}" alt="" style="height: 80px;">
+                	<p class="text-center">Conception Architecturale</p>
 				</div>
-	
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img7.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ATLAS Architecture</h5>
-						</div>
-					</div>
+					
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/service_archhitecture_ext.png" %}" alt="" style="height: 80px;">
+                	<p class="text-center">Architecture Extérieure</p>
 				</div>
 				
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">G ART</h5>
-						</div>
-					</div>
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/service_archhitecture_int.png" %}" alt="" style="height: 80px;">
+                	<p class="text-center">Architecture Intérieure</p>
+				</div>
+
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/service_devis.png" %}" alt="" style="height: 50px;">
+                	<p class="text-center">Devis</p>
 				</div>
 			</div>
-			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
+			<div class="col-md-12 text-right">
+				<a type="button" class="btn btn-outline-light btn-lg" href="service">Voir Plus</a>
 			</div>
 		</div>
 	</div>
 
+	<p class="text-center" style="color: black; font-size: 25px;">
+		Personnalisez au maximum vos projets à votre guise à l'aide de nos différents services <br/> en place 
+		pour vous accompagner dans chaque détails tout en gardant un oeuil sur les coûts.
+	</p>
+
 	<div id="realisation">
-		<div class="container">
-			<h2 class="title text-center">Réalisations</h2>
+		<div class="container-fluid">
+			<h2 class="title text-center" style="color: white; ">REALISATIONS</h2>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img5.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ENSP</h5>
-						</div>
-					</div>
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/realisation_centre_commercial.jpg" %}" alt="" style="height: 150px;">
+                	<p class="text-center">Conception Centre Commercial</p>
 				</div>
-	
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img2.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">ATLAS Architecture</h5>
-						</div>
-					</div>
+					
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/realisation_ext.jpg" %}" alt="" style="height: 150px;">
+                	<p class="text-center">Extérieure Duplexe</p>
 				</div>
 				
-				<div class="col-md-4">
-					<div class="card" style="width: 15rem;">
-						<img src="{% static "atlas_architecture/images/img4.jpg" %}" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">G ART</h5>
-						</div>
-					</div>
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/realisation_int.jpg" %}" alt="" style="height: 150px;">
+                	<p class="text-center">Intérieure Duplexe</p>
+				</div>
+
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/realisation_location.jpg" %}" alt="" style="height: 150px;">
+                	<p class="text-center">Immeuble a usage d'habitation</p>
 				</div>
 			</div>
-			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-outline-success btn-lg buttonP">Voir Plus</button>
+			<div class="col-md-12 text-right">
+				<a type="button" class="btn btn-outline-light btn-lg" href="realisation">Voir Plus</a>
+			</div>
+		</div>
+	</div>
+
+	<p class="text-center" style="color: black; font-size: 25px; margin-top: 20px;">
+		Gagner en expérience et toujours innover pour vous offrir toujours <strong> MIEUX </strong>!
+	</p>
+
+	<div id="partenaire">
+		<div class="container-fluid">
+			<h2 class="title text-center">PARTENAIRES</h2>
+			<div class="row">
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/partenaires_wood_cft.png" %}" alt="">
+                	<p class="text-center" style="color: black;">WOOD CFT</p>
+				</div>
+					
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/GCC.png" %}" alt="">
+                	<p class="text-center" style="color: black;">GLOBAL CONSULT AND CONSTRUCTION - BTP</p>
+				</div>
+				
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/partenaires_Morine_Deco.png" %}" alt="">
+                	<p class="text-center" style="color: black;">Morine Deco</p>
+				</div>
+
+				<div class="col-md-3 serv">
+					<img src="{% static "atlas_architecture/images/partenaires_ISD_Archi.png" %}" alt="">
+                	<p class="text-center" style="color: black;">ISD Architecture</p>
+				</div>
+			</div>
+			<div class="col-md-12 text-right">
+				<button type="button" class="btn btn-outline-light btn-lg">Voir Plus</button>
 			</div>
 		</div>
 	</div>

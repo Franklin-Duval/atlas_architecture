@@ -6,10 +6,30 @@
 {% endblock linkcss %}
 
 {% block content %}
+
+    <style>
+        .title{
+            height: 100px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .service p{
+            font-size: 18px;
+        }
+
+        .speech{
+            font-size: 22px;
+            font-family: 'Calibri';
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+
     <div class="container-fluid bodys">
         <h2 class="text-center title">Nos Services</h2>
         <p class="text-center speech">Le design extérieur d'un ouvrage représente son identité et constitue son premier critère d évaluation. 
-            Ainsi , il mérite d être conçu aussi minutieusement que le reste de l édifice. 
+            <br/>Ainsi , il mérite d être conçu aussi minutieusement que le reste de l édifice. 
             Du choix des couleurs au choix des matériaux en passant par l‘Aménagement des espaces verts , ATLAS Architecture vous 
             accompagne afin de faire transparaître sur votre édifice le meilleur de votre imagination.
         </p>
@@ -17,8 +37,10 @@
         <div class="scroll">
             {% for serv in services %}
                 <div class="service">
-                    <h2>0{{serv.id}} </h2>
-                    <h3>{{serv.nom}} </h3>
+                    <img src="{{serv.image.url}}" alt="..." style="height: 50px;" />
+                    <div class="title">
+                        <h3>{{serv.nom}} </h3>
+                    </div>
                     <p>{{serv.description}} </p>
                 </div>
             {% endfor %}

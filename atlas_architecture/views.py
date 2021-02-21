@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
 
 # Create your views here.
@@ -38,3 +38,6 @@ def service(request):
     services = Service.objects.all()
     context = {"services": services}
     return render(request, 'atlas_architecture/service.html', context)
+
+def root(request):
+    return redirect('/acceuil')
