@@ -10,6 +10,7 @@ urlpatterns = [
     path('realisation', views.realisation, name='realisation'),
     path('partenaire', views.partenaire, name='partenaire'),
     path('service', views.service, name='service'),
+    path('search', views.search, name='search'),
     path('', views.root, name='root'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

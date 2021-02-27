@@ -13,8 +13,7 @@
 
 .speech{
     font-size: 18px;
-    font-family: 'Comic Sans MS';
-    font-weight: bold;
+    font-family: 'Calibri';
     color: black;
 }
 
@@ -42,7 +41,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 20px;
-    font-style: italic;
     white-space: normal;
 }
 
