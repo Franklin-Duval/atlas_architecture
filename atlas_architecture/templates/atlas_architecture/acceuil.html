@@ -3,6 +3,7 @@
 
 {% block linkcss %}
 	<link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/acceuil.css" %} ">
+	<link rel="stylesheet" type="text/css" href="{% static "atlas_architecture/css/base.css" %} ">
 {% endblock linkcss %}
 
 {% block content %}
@@ -30,7 +31,7 @@
 					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1>NOS PARTENAIRES <br/>A VOTRE DISPOSITION</h1>
-							<h3>Nous méttons à votre disposition l'assistance de nos <br/>différents partenaires pour vous conseiller, 
+							<h3 class="d-none d-sm-block">Nous méttons à votre disposition l'assistance de nos <br/>différents partenaires pour vous conseiller, 
 								vous donner des références<br/> et vous accompagner dans voos différents projets.
 							</h3>
 							{% comment %} <div class="row test">
@@ -50,7 +51,7 @@
 					<div class="carousel-caption d-sm-block">
 						<div class="intro">
 							<h1 style="color: white">UNE DIVERSITE DE SERVICES <br/> POUR DES PROJETS PERSONNALISES</h1>
-							<h3 style="color: white">Personnalisez au maximum vos projets à votre guise <br/> à l'aide de nos différents services en place pour vous <br/> accompagner dans chaque détails.</h3>
+							<h3 style="color: white" class="d-none d-sm-block">Personnalisez au maximum vos projets à votre guise <br/> à l'aide de nos différents services en place pour vous <br/> accompagner dans chaque détails.</h3>
 							
 						</div>
 						
@@ -187,9 +188,7 @@
                 	<p class="text-center" style="color: black;">ISD Architecture</p>
 				</div>
 			</div>
-			<div class="col-md-12 text-right">
-				<button type="button" class="btn btn-outline-light btn-lg">Voir Plus</button>
-			</div>
+			
 		</div>
 	</div>
 

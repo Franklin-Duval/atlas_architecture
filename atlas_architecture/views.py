@@ -69,7 +69,7 @@ def search(request):
             details.append(obj)
         
         for detail in details:
-            if re.search(query, detail["realisations"].nom, re.IGNORECASE) or re.search(query, detail["realisations"].description, re.IGNORECASE):
+            if re.search(query, detail["realisations"].nom, re.IGNORECASE) or re.search(query, detail["realisations"].description, re.IGNORECASE) or re.search(query, str(detail["realisations"].date), re.IGNORECASE):
                 result.append(detail)
             else:
                 for xtic in detail["xtics"]:
