@@ -1,6 +1,21 @@
 
 /* ----- Body ----- */
+.top-image{
+    background-image: url("../images/realisation_defile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
+.title{
+    color: white;
+    font-size: 70px;
+    font-family: 'Tauri';
+    margin-left: 50px;
+}
 
 .buttons{
     margin-top: 20px;
@@ -15,4 +30,12 @@
 .image{
     height: 150px;
     width: 150px;
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        font-size: 40px;
+        font-family: 'Tauri';
+        margin-left: 20px;
+    }
 }

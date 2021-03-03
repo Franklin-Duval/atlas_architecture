@@ -20,8 +20,10 @@
         }
     </style>
     {% if content %}
+        <div class="top-image" style="height: 510px; width: '100%'; margin-bottom: -70px;" >
+            <h1 class="title">ATLAS <br/> ARCHITECTURE : <br/> REALISATIONS </h1>
+        </div>
         <div>
-            <h2 class="text-center title">Nous réalisons vos Inspirations</h2>
 
             <div class="row">
                 {% for real in content %}
@@ -31,7 +33,7 @@
                                 <img src="{{im.url}}" class="card-img-top" alt="..." style="height: 210px;" />
                             {% endfor %}
                             <div class="card-body">
-                                <h5 class="card-title">{{real.realisations.nom}}</h5>
+                                <h5 class="card-title" style="font-family: 'Tauri';">{{real.realisations.nom}}</h5>
                                 <p class="date" style="color: black;">{{real.realisations.date}}</p>
                                 <p class="card-text" style="color: black;">{{real.realisations.description| safe | truncatechars_html:150}} </p>
                             </div>

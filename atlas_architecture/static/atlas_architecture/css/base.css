@@ -1,3 +1,13 @@
+@font-face{
+    src: url('../fonts/Tauri-Regular.ttf');
+    font-family: 'Tauri';
+}
+
+@font-face{
+    src: url('../fonts/Roboto-Light.ttf');
+    font-family: 'Roboto Light';
+}
+
 /* ----- Navigation Bar ----- */
 .logo{
     width: 210px;
