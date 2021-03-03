@@ -1,0 +1,58 @@
+
+/* ----- Body ----- */
+.title{
+    padding-top: 30px;
+}
+
+.bodys{
+    background-image: url("../images/fond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.speech{
+    font-size: 18px;
+    font-family: 'Tauri';
+    color: black;
+}
+
+.scroll{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 10px;
+}
+
+.service{
+    display: inline-block;  /* to enable the div to be easily placed in the scroll */
+    width: 350px;
+    min-height: 500px;
+    max-height: 500px;
+    padding: 30px;
+    margin: 30px;
+    background-image: linear-gradient(#777, rgb(56, 51, 51));
+    color: white;
+    border: 2px solid black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 20px;
+    white-space: normal;
+}
+
+.service h4{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.service h2{
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-right: 220px;
+    background-color: rgb(153, 149, 149);
+}

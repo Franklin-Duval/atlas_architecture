@@ -1,0 +1,90 @@
+@font-face{
+    src: url('../fonts/Tauri-Regular.ttf');
+    font-family: 'Tauri';
+}
+
+@font-face{
+    src: url('../fonts/Roboto-Light.ttf');
+    font-family: 'Roboto Light';
+}
+
+/* ----- Navigation Bar ----- */
+.logo{
+    width: 210px;
+    height: 50px;
+}
+
+.navbar-nav li{
+	padding: 0 20px;
+}
+
+.navbar-nav li a{
+	color: black !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+
+#id{
+    color: black;
+}
+
+.icon{
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.icon a{
+    color: black;
+    size: 20px;
+}
+
+form button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* ----- Footer ----- */
+.foot{
+    /* background-color: rgb(20, 19, 19); */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    min-height: 300px;
+    background-image: url("../images/footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foot i{
+    background-color: gray;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+
+.foot h1, p{
+    color: white;
+    font-family: "Calibri";
+    margin-top: 20px;
+}
+
+.foot .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* @media screen and (min-width: 500px){
+    .logo-end{
+        height: 70px;
+        width: 70px;
+        border-radius: 25px;
+        margin-left: 100px;
+    }
+} */

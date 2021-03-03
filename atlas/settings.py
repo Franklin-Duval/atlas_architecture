@@ -126,6 +126,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'atlas_architecture/media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'atlas_architecture/staticfiles')
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
